@@ -16,15 +16,25 @@ A simple tool to download manga chapters from [Rawkuma](https://rawkuma.net) - p
 4. Choose where to save
 5. Click **Start** and enjoy offline reading!
 
-## 🖼 GUI Preview
+## 🖼️ GUI Preview
 ![demo](assets/demo.png)
 
 ---
 
 ## 🚀 How to Use
 
-1. **Download `rawkuma-dl.exe`** from [dist/](dist/)
-2. Run it on Windows (double click)
-3. Paste any Rawkuma manga URL (e.g., https://rawkuma.net/manga/kaijuu-8-gou/)
+1. **Extract** .zip file
+2. **Run** `rawkuma-dl.exe` in `dist/` folder
+3. **Paste** any Rawkuma manga URL (e.g., https://rawkuma.net/manga/kaijuu-8-gou/)
 4. Choose folder to save chapters
-5. Click `Start` – and it will do the rest!
+5. Click **Start** – and it will do the rest!
+
+## 📁 Folder Structure (After Download)
+
+Kaijuu 8-gou/chapter 0/0.jpg
+
+## ⚠️ Notes
+
+-  Compatible with Windows 10/11
+-  Currently Windows-only (.exe build)
+-  No browser required — everything is automatic
