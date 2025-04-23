@@ -14,19 +14,19 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt pyinstaller
 
-    - name: Build .app
+    - name: Build macOS app
       run: |
         pyinstaller --noconfirm --windowed rawkuma-dl.py
 
-    - name: Upload built app
-      uses: actions/upload-artifact@v3
+    - name: Upload app (macOS)
+      uses: actions/upload-artifact@v2
       with:
-        name: rawkuma-macos
-        path: dist/rawkuma-dl.app
+        name: rawkuma-downloader-macos
+        path: dist/
